@@ -3,7 +3,7 @@ edition = "2021"
 license = "MIT"
 homepage = "https://github.com/edger-dev/prep"
 repository = "https://github.com/edger-dev/prep"
-authors = ["YJ Park<yjpark@gmail.com>"]
+authors = ["YJ Park <yjpark@gmail.com>"]
 
 [workspace]
 resolver = "2"
