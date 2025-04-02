@@ -1,0 +1,27 @@
+[workspace.package]
+edition = "2021"
+license = "MIT"
+homepage = "https://github.com/edger-dev/prep"
+repository = "https://github.com/edger-dev/prep"
+authors = ["YJ Park<yjpark@gmail.com>"]
+
+[workspace]
+resolver = "2"
+members = [
+    "core/*",
+]
+
+[workspace.dependencies]
+edger_prep_grep = { path = "core/grep", version = "0.1.0" }
+edger_prep_process = { path = "core/process", version = "0.1.0" }
+
+# Common
+snafu = "0.8.5"
+serde = { version = "1.0.219", features = ["derive", "alloc"] }
+clap = { version = "4.5.34", features = [ "derive" ] }
+tracing = "0.1.41"
+
+# Cli
+tracing-subscriber = "0.3.19"
+tracing-log = "0.2.0"
+clap-verbosity-flag = "3.0.2"
