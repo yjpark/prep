@@ -14,4 +14,3 @@ authors.workspace = true
 [dependencies]
 tracing = { workspace = true }
 grep = { workspace = true }
-process = { workspace = true }
