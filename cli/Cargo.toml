@@ -11,5 +11,10 @@ authors.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "prep"
+
 [dependencies]
 tracing = { workspace = true }
