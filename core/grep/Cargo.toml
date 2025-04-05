@@ -13,5 +13,6 @@ authors.workspace = true
 
 [dependencies]
 tracing = { workspace = true }
+snafu = { workspace = true }
 grep = { workspace = true }
 ignore = { workspace = true }

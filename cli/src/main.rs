@@ -7,12 +7,16 @@ fn main() -> ExitCode {
     let args = Args {
         root: PathBuf::from("."),
         language: "rust".to_string(),
-        patterns: vec![],
+        patterns: vec![
+            "test".to_string(),
+            "grep".to_string(),
+        ],
     };
 
     let runner = Runner{};
 
-    runner.run(args);
+    let matched = runner.run(args);
+    println!("{matched:#?}");
 
     ExitCode::SUCCESS
 }
