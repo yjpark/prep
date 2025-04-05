@@ -6,7 +6,7 @@ fn main() -> ExitCode {
 
     let args = Args {
         root: PathBuf::from("."),
-        extension: "rs".to_string(),
+        language: "rust".to_string(),
         patterns: vec![],
     };
 
