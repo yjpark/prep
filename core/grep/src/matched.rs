@@ -1,3 +1,5 @@
+use std::path::PathBuf;
+
 use crate::Args;
 
 #[derive(Clone, Debug)]
@@ -8,7 +10,7 @@ pub struct Matched {
 
 #[derive(Clone, Debug)]
 pub struct MatchedFile {
-    pub path: AsRef<Path>,
+    pub path: PathBuf,
     pub lines: Vec<MatchedLine>,
 }
 

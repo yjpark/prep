@@ -1,7 +1,8 @@
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct Args {
     pub root: PathBuf,
+    pub extension: String,
     pub patterns: Vec<String>,
 }

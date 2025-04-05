@@ -9,11 +9,13 @@ authors = ["YJ Park <yjpark@gmail.com>"]
 resolver = "2"
 members = [
     "core/*",
+    "cli",
 ]
 
 [workspace.dependencies]
 edger_prep_grep = { path = "core/grep", version = "0.1.0" }
 edger_prep_process = { path = "core/process", version = "0.1.0" }
+edger_prep_cli = { path = "cli", version = "0.1.0" }
 
 # Common
 snafu = "0.8.5"

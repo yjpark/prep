@@ -1,6 +1,6 @@
 [package]
 publish = false
-name = "edger_prep_grep"
+name = "edger_prep_cli"
 version = "0.1.0"
 
 edition.workspace = true
@@ -13,5 +13,3 @@ authors.workspace = true
 
 [dependencies]
 tracing = { workspace = true }
-grep = { workspace = true }
-ignore = { workspace = true }
