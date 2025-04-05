@@ -17,4 +17,5 @@ path = "src/main.rs"
 name = "prep"
 
 [dependencies]
+edger_prep_grep = { workspace = true }
 tracing = { workspace = true }

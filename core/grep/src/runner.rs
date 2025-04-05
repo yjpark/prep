@@ -6,7 +6,7 @@ pub struct Runner {
 }
 
 impl Runner {
-    pub fn run(args: Args) -> Matched {
+    pub fn run(&self, args: Args) -> Matched {
         let walker = WalkBuilder::new(args.root).build();
         for result in walker {
             println!("Walk: {result:?}");

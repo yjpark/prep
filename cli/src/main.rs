@@ -1,6 +1,18 @@
-use std::process::ExitCode;
+use std::{path::PathBuf, process::ExitCode};
+
+use edger_prep_grep::{Runner, Args};
 
 fn main() -> ExitCode {
-    println!("TODO");
+
+    let args = Args {
+        root: PathBuf::from("."),
+        extension: "rs".to_string(),
+        patterns: vec![],
+    };
+
+    let runner = Runner{};
+
+    runner.run(args);
+
     ExitCode::SUCCESS
 }
